@@ -89,10 +89,6 @@ export const NavLinks = styled(LinkScroll)`
 export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
-
-    @media screen and(max-width: 768px){
-        display: none;
-    }
 `
 
 export const NavBtnLink = styled(LinkRouter)`
@@ -112,5 +108,10 @@ export const NavBtnLink = styled(LinkRouter)`
         transition: all 0.2s ease-in-out;
         background-color: #ffff;
         color: #010606;
+    }
+
+    //WTF
+    @media screen and (max-width: 768px){
+        display: none;
     }
 `
